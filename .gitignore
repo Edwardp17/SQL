@@ -2,7 +2,7 @@
 *
 
 # But not these files...
-
+!trip_data.sql
 
 # ...even if they are in subdirectories
 !*/
