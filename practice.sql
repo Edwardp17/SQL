@@ -1,3 +1,10 @@
+
+-- See schema in separate doc
+
+-- Get average rental rate of films that
+-- were rented before May 25, 2005
+-- and were in English.
+
 WITH english_films as (
     SELECT film_id
     FROM film
@@ -19,6 +26,15 @@ WHERE f.film_id IN (SELECT film_id FROM english_films)
 
 
 -------------------------------------------------------
+
+-- Get average replacement cost for the
+-- top 5 longest films out of all the
+-- films that involved actor_id = 1.
+-- Only consider films:
+-- From the 2 rental durations with the
+-- lowest # of films.
+-- Out of all the rental durations with
+-- more than 200 films.
 
 WITH dur_200 AS(
     SELECT rental_duration
