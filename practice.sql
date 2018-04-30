@@ -53,8 +53,8 @@ WITH dur_200 AS(
 
 , actor_1_films AS (
     SELECT f.film_id
-    , f.length
-    , RANK() OVER (ORDER BY f.length DESC) as length_rnk
+        , f.length
+        , RANK() OVER (ORDER BY f.length DESC) as length_rnk
     FROM film f
     JOIN film_actor fa
     ON fa.film_id = f.film_id
