@@ -4,6 +4,7 @@
 # But not these files...
 !trip_data.sql
 !practice.sql
+!dvdrental_schema_lineage.pdf
 
 # ...even if they are in subdirectories
 !*/
